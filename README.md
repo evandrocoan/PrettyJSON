@@ -2,14 +2,28 @@
 
 Prettify/Minify/Query/Goto/Validate/Lint JSON plugin for Sublime Text 2 & 3
 
+
 ## Installation
 
-Install this sublime text 2/3 package via [Package Control](https://sublime.wbond.net) search for package: "[**Pretty JSON**](https://sublime.wbond.net/packages/Pretty%20JSON)"
+### By Package Control
 
-### or manually install
+1. Download & Install `Sublime Text 3` (https://www.sublimetext.com/3)
+1. Go to the menu `Tools -> Install Package Control`, then,
+   wait few seconds until the `Package Control` installation finishes
+1. Go to the menu `Preferences -> Package Control`
+1. Type `Package Control Add Channel` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, input the following address and press <kbd>Enter</kbd>
+   ```
+   https://raw.githubusercontent.com/evandrocoan/StudioChannel/master/channel.json
+   ```
+1. Now, go again to the menu `Preferences -> Package Control`
+1. This time type `Package Control Install Package` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, search for `PrettyJSON` and press <kbd>Enter</kbd>
 
-- `cd <Packages directory>`   (for example on Mac it is `~/Library/Application\ Support/Sublime\ Text\ 2/Packages` or `~/Library/Application\ Support/Sublime\ Text\ 3/Packages`)
-- `git clone https://github.com/dzhibas/SublimePrettyJson.git`
+See also:
+1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
+1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
+
 
 ## Usage
 
@@ -74,7 +88,7 @@ http://stedolan.github.io/jq/
 **keep_arrays_single_line** - false
 `if we need to re-structure arrays and make them single-line`
 
-**max_arrays_line_length** - 120 
+**max_arrays_line_length** - 120
 `if array for example '["a", "b", 123213, ....]' length will reach max it will be kept multi-line (for beauty)`
 
 **pretty_on_save** - false
